@@ -1,0 +1,15 @@
+<div class="alert alert-danger" ng-show="load_error">{{ load_error }}</div>
+<h3>{{ album_name }}</h3>
+
+<div class="photo thumbnail" style="width: 250px; float: left; margin-right: 10px" ng-repeat="photo in photos">
+
+<span>{{ photo.desc }}</span>
+<a href="/index.html#/albums/{{ album_name }}/photos/{{ photo.filename }}">
+	<img ng-src="/media/{{ album_name }}/{{ photo.filename }}"/>
+</a>	
+	<p>{{ photo.filename }}</p>
+
+</div>
+	
+
+</div>
